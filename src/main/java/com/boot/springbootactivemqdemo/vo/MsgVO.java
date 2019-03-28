@@ -1,7 +1,7 @@
 /**
  * Copyright (C) 2006-2019 Tuniu All rights reserved
  */
-package com.boot.activemqdemo.vo;
+package com.boot.springbootactivemqdemo.vo;
 
 import java.io.Serializable;
 

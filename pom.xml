@@ -16,6 +16,8 @@
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 	</properties>
 
@@ -38,6 +40,23 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-activemq</artifactId>
+		</dependency>
+
+		<!--依赖于连接池，这样就可以启用JMS连接池了 -->
+		<!--<dependency>-->
+		<!--<groupId>org.apache.activemq</groupId>-->
+		<!--<artifactId>activemq-pool</artifactId>-->
+		<!--</dependency>-->
+
+
+		<dependency>
+			<groupId>org.apache.activemq</groupId>
+			<artifactId>activemq-pool</artifactId>
 		</dependency>
 	</dependencies>
 

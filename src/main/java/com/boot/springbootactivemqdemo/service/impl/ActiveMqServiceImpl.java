@@ -1,9 +1,9 @@
 /**
  * Copyright (C) 2006-2019 Tuniu All rights reserved
  */
-package com.boot.activemqdemo.service.impl;
+package com.boot.springbootactivemqdemo.service.impl;
 
-import com.boot.activemqdemo.service.IActiveMqService;
+import com.boot.springbootactivemqdemo.service.IActiveMqService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jms.annotation.JmsListener;
 import org.springframework.jms.core.JmsTemplate;
@@ -14,6 +14,8 @@ public class ActiveMqServiceImpl implements IActiveMqService {
 
     @Autowired
     JmsTemplate jmsTemplate;
+
+
 
     @Override
     public String publishMsg(String msg) {
